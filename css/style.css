@@ -231,12 +231,6 @@ img {
     margin-bottom: var(--gap-in-section);
 }
 
-.benefits-wrapper-icons:not(:last-child){
-    margin-right: var(--gap-in-section);
-} 
-
-
-
 /* section about */
 
 .about{
@@ -306,7 +300,8 @@ width: calc((100% - 90px) / 4 );
 }
 
 .team-wrapper{
-    padding-top: 30px;
+    padding-top: var(--gap-in-section);
+    padding-bottom: var(--gap-in-section);
 }
 
 .team-after-title{
@@ -325,11 +320,13 @@ width: calc((100% - 90px) / 4 );
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--paragraph-color);
+    margin-bottom: 16px;
 }
 
 .team-soc-list{
     display: flex;
-    padding: 16px 32px 30px;
+    justify-content: center;
+    text-align: center;
 }
 
 .team-soc-links{
@@ -473,14 +470,11 @@ width: calc((100% - 90px) / 4 );
 
 .footer-wrapper{
     display: flex;
+    align-items: baseline;
 }
 
 .footer-wrapper-two:not(:last-child) {
     margin-right: 70px;
-}
-
-.footer-wrapper-two.soc{
-    padding-top: 12px;
 }
 
 .footer-soc-list{
@@ -560,6 +554,15 @@ width: calc((100% - 90px) / 4 );
 
 .portfolio-item-second:not(:nth-last-child(-n + 3)) {
     margin-bottom: var(--gap-in-section);
+}
+
+.portfolio-item-second:hover, 
+.portfolio-item-second:focus {
+    border: 1px solid #EEEEEE;
+    box-sizing: border-box;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+    0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .portfolio-item-wrapper{
