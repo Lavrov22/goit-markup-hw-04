@@ -556,8 +556,12 @@ width: calc((100% - 90px) / 4 );
     margin-bottom: var(--gap-in-section);
 }
 
-.portfolio-item-second:hover, 
-.portfolio-item-second:focus {
+.portfolio-link{
+    display: block;
+}
+
+.portfolio-link:hover, 
+.portfolio-link:focus {
     border: 1px solid #EEEEEE;
     box-sizing: border-box;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
